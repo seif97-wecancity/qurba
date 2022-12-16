@@ -1,0 +1,33 @@
+.footer {
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1% 5%;
+	min-height: 25px;
+	bottom: 0px;
+	left: 0px;
+	background-color: #1d2939;
+	margin: 0;
+}
+ul {
+	li {
+		img {
+			width: 40px;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+			color: white;
+		}
+		margin: 0px 30px;
+		display: flex;
+		align-items: center;
+	}
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}

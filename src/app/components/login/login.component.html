@@ -1,0 +1,27 @@
+<app-nav-bar></app-nav-bar>
+
+<form class="d-flex justify-content-center" [formGroup] = "loginForm"
+(ngSubmit)="onSubmit()">
+    <div class="login-container">
+        <div class="text-center">
+            <img src="./../../../assets/images/login/01.PNG" alt="">
+        </div>
+        <div>
+            <h2 class="text-center my-0">Log in to your account</h2>
+            <div class="text-center my-5">
+                <span class="welcom-span">Welcom back! Please enter your details.</span>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap">
+            <label for="username" class="w-100 my-3">User Name</label>
+            <input type="text" id="username" formControlName="username" placeholder="Enter your username" class="w-100 form-control">
+        </div>
+        <div class="d-flex flex-wrap">
+            <label for="psd" class="w-100 my-3">Password</label>
+            <input type="password" id="psd" formControlName="password" placeholder="password" class="w-100 form-control">
+        </div>
+        <div class="my-3">
+            <button [disabled]="button" class="btn btn-info w-100" type="submit">sign in</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,28 @@
+<section class="navigation">
+    <div class="nav-container">
+
+        <nav>
+            <!-- this is the left section (logo) of the nav bar -->
+            <div class="nav-screen-full">
+                <ul class="nav-list">
+                    <li *ngFor="let item of itemsNav">
+                        <img src="./../../../assets/images/login/01.PNG" alt="" *ngIf="item.img != null">
+                        <a href="#!"> {{item.nameItem}}</a>
+                    </li>
+                </ul>
+                <!-- this is the right section of the nav bar -->
+                <div *ngIf="switch">
+                    <span class="log-label">Log in</span>
+                </div>
+                <div *ngIf="!switch">
+                    <span class="log-label" style="margin-right: 10px;">
+                    <button class="btn btn-info log-label" style="margin-left: 3px;" (click)="signout()">Sign out</button>
+                </span>
+                    <span class="log-label">
+                         <span class="productcount">{{count}}</span>🛒
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>

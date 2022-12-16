@@ -1,0 +1,152 @@
+.container {
+	width: 80%;
+	margin: auto;
+	margin-top: 5%;
+}
+.search{
+  position:absolute; 
+  margin: -49px 0px ;
+  right: 200px;
+}
+.said-menu {
+	width: 25%;
+	margin: 0;
+}
+.said-menu-content {
+	border: 1px solid #6e6e6e;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 20px;
+	position: sticky;
+	top: 30px;
+}
+.all-items {
+	width: 75%;
+}
+.items {
+	width: 33.3333333%;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.card {
+	margin-bottom: 20px;
+	border: 1px solid #6e6e6e;
+	border-radius: 10px;
+}
+.dir-page {
+	span {
+		color: #6e6e6e;
+	}
+}
+.active-dir {
+	color: black !important;
+}
+figure {
+	position: relative;
+	margin: 0 5px;
+	padding: 5px;
+	.discount {
+		background-color: #0dcaf0;
+		padding: 5px;
+		border-radius: 10px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+}
+figcaption {
+	margin: 10px 0;
+	color: #6e6e6e;
+}
+.old-price {
+	text-decoration: line-through;
+	margin-right: 20px;
+}
+strong {
+	color: black;
+	font-weight: bold;
+}
+.details {
+	height: 250px;
+}
+@media (min-width:992px) and (max-width: 1199px) {
+  .container{
+	margin-top: 20px;
+  }
+	.said-menu {
+		width: 33.33333%;
+	}
+	.items {
+		width: 50%;
+	}
+	.all-items {
+		width: 66.66666%;
+	}
+}
+@media (min-width:550px) and (max-width: 991px) {
+  .search{
+    margin: auto;
+    right: auto;
+	
+  }
+  .container{
+	margin-top: 20px;
+  }
+	.said-menu {
+		width: 50%;
+	}
+	.items {
+		width: 100%;
+	}
+	.all-items {
+		width: 50%;
+	}
+	.container {
+		width: 96%;
+		margin-top: 5%;
+		margin: 5% 2%;
+	}
+	
+}
+@media (max-width: 549px) {
+  .search{
+    margin: auto;
+    right: auto;
+	
+  }
+  .container{
+	margin-top: 20px;
+  }
+	.said-menu {
+		width: 100%;
+	}
+	.items {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.all-items {
+		width: 100%;
+	}
+	.container {
+		width: 96%;
+		margin-top: 5%;
+		margin: 5% 2%;
+	}
+	
+}
+
+input[type=text] {
+	// width: 20%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	// background-image: url('searchicon.png');
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+  }
+
+  

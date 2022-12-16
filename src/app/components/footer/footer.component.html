@@ -1,0 +1,12 @@
+<footer class="footer">
+
+    <div class="allFooterEle">
+        <ul class="footer-list">
+            <li *ngFor="let item of itemsFooter">
+                <img src="./../../../assets/images/footer/01.PNG" alt="" *ngIf="item.img != null">
+                <a href="#!"> {{item.nameItem}}</a>
+            </li>
+            
+        </ul>
+    </div>
+</footer>   
